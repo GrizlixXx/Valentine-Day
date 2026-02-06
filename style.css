@@ -1,0 +1,22 @@
+.text-heart-beat {
+  display: inline-block;
+  animation: heartbeat 2s infinite;
+  margin: 0 10px;
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.2);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
