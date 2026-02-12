@@ -8,8 +8,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p class="text-5xl text-red-300 text-center">
-      <span class="text-heart-beat">💖</span>З днем святого миколая<span class="text-heart-beat">💖</span>
-    </p>
+    <section name="intro" id="intro" class="flex flex-col justify-center items-center">
+      <p class="text-4xl text-red-300 text-center">
+        <span class="text-heart-beat">💖</span>З днем <span class="text-heart-beat">💖</span>святого Миколая Пісюлька
+      </p>
+      <div class="video-container">
+        <video id="video" class="responsive-video" muted src="res/Minion_love.mp4"></video>
+        <div id="mask" style="position: absolute; top: 0; left: 0; width: 100%; height: 0; background: white"></div>
+        <div
+          id="hearts-container"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none"
+        ></div>
+      </div>
+
+      <div class="flex justify-center items-center m-5 gap-5">
+        <button id="yes" class="w-[100px] p-[10px] border-2 border-red-200">yes</button>
+        <button id="no" class="p-2 w-16 border-2 border-red-500">no 💀</button>
+      </div>
+      <div id="happy" style="display: none" class="text-2xl">
+        <p class="word"><span>У</span><span>Р</span><span>А</span><span>А</span><span>А</span><span>!</span></p>
+      </div>
+      <div>
+        <button id="nextBtn" class="px-20 bg-gray-300 py-4 border-2 glow-btn">NEXT</button>
+      </div>
+      <audio id="fireworks" preload="auto" src="res/firework1.mp3"></audio>
+      <audio id="yeeeeaaaahhhh" src="res/yeeeeaaaahhhh.mp3"></audio>
+      <audio id="backgroundMusic" loop src="res/backgroundMusic.mp3"></audio>
+    </section>
+    <section class="hidden" name="love" id="love">
+      <div id="scene" class="text-center flex justify-center items-center font-serif text-3xl">
+        <p id="message">Я кароче тебе дуже люблю пон?</p>
+        <button id="nextBtn2" class="px-20 relative top-[30%] bg-gray-300 py-4 border-2 glow-btn">Це ще не всьо</button>
+      </div>
+    </section>
+    <section class="hidden" name="love2" id="love2">
+      <div id="scene2" class="text-center flex justify-center items-center font-serif text-xl">
+        <p id="message2">
+          Спасіба тобі пісюлька за все, за твою улибку яка гріє мою душу, за твоє время яке ти проводиш зі мною, за сили
+          які ти тратиш на мене чесно я все це ціню, <span class="underline decoration-red-500">Ти</span> стала для мене
+          рідною лидиною за це время, і наші совмєстні спогади будуть радувать і гріть мене ще дуже багато год, ти моє
+          золотце панятна тібі? люблю тебе.
+        </p>
+      </div>
+    </section>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
